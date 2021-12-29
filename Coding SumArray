@@ -1,0 +1,25 @@
+package myArray;
+
+public class sumArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double [] sales = new double[10];
+		int index;
+		double sum, average;
+		
+		sum = 0;
+		for(index = 0; index < sales.length; index++)
+			sum = sum + sales[index];
+				
+	    if (sales.length != 0)
+	    	average = sum / sales.length;
+	    else
+	    	average = 0.0;
+	    
+	    System.out.print(average);
+
+	}
+
+}
